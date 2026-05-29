@@ -188,7 +188,6 @@ v_exp = michaelis_menten(S_exp, Vmax=1.0, Km=2.0) + np.random.normal(0, 0.02, le
 
 def modelo_mm(S, Vmax, Km):
     return (Vmax * S) / (Km + S)
-
 params, errores, y_pred = ajustar_curva(S_exp, v_exp, modelo_mm, p0=[0.8, 1.0])
 
 print(f"  Vmax ajustado : {params[0]:.4f} ± {errores[0]:.4f}")
