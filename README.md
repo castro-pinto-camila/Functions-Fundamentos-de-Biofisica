@@ -115,9 +115,9 @@ Resultado esperado:
 # Ejemplos de uso
 
 ```python
-import MiModuloBiofisica as bio
+import mimodulodebiofisica as mb
 
-energia = bio.energia_cinetica(10, 5)
+energia = mb.energia_cinetica(10, 5)
 
 print(energia)
 ```
